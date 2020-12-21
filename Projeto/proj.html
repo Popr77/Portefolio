@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Portefolio</title>
+        <link rel="stylesheet" href="proj.css">
+        <link rel="shortcut icon"  type="image/png" href="imgs/logo4.png">
+
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Staatliches&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <div class="container-nav">
+            <div class="container-logo">
+                <a class="navbar-brand" href="#"><img src="imgs/logo4.png"></a>
+            </div>
+            <nav class="topnav" id="myTopnav">
+                <a href="#about_me" class="active">About Me</a>
+                <a href="#my_work">My Work</a>
+                <a href="#contacts">Contacts</a>
+                <a href="javascript:void(0);" class="icon" onclick="navBar()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </nav>
+        </div>
+        <main>
+            <section class="container container-1">
+                <div>
+                    <p>- Introduction</p>
+                    <h2>Product Designer and Developer, based in Porto</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo adipisci cupiditate, minima nam modi ipsa soluta corporis provident blanditiis voluptatem voluptas maiores enim quidem perferendis harum distinctio quas dolores deserunt!</p>
+                    <div class="div-bottom">
+                        <a href="https://instagram.com/palha77"><img src="imgs/insta2.png" alt="instagram"></a>
+                        <a href="https://www.linkedin.com/in/joão-vasconcelos-392bb11b7"><img src="imgs/in2.png" alt="linkedin"></a>
+                        <a href="https://twitter.com/"><img src="imgs/tt2.png" alt="twitter"></a>
+                    </div>
+                </div>
+            </section>
+            <section class="container container-2" id="about_me">
+                <h2>About Me</h2>
+                <div class="sub-container sub-container-2">
+                    <div class="div-img">
+                        <img class="image-portrait" src="imgs/as4.jpg" alt="">
+                    </div>
+                    <div class="div-texto">
+                        <h3>A litle about me</h3>
+                        <h4>I am a Web Designer and Front-end Developer</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto harum, eligendi quae voluptate in libero inventore, a magni maxime sint eaque beatae quam sequi non iste laborum laudantium. Sequi, quos? </p>
+                        
+                    </div>
+                </div>
+            </section>
+            <section class="container container-3" id="my_work">
+                <div class="sub-container-3">
+                    <h2>My Work</h2>
+                    <input type="button" class="btnOrdenar" onclick="reOrdenar()" value="Asc">
+                </div>
+                <article class="container-article">
+                        <!-- Javascript -->
+                </article>
+            </section>
+            <section class="container container-4" id="contacts">
+                <h2>Get in Touch</h2>
+                <form form id="formElement" name="formElement" method="POST" action="#">
+                    <input type="text" id="input_name" placeholder="Name" required>
+                    <input type="email" id="input_email" placeholder="Email" required>
+                    <input type="text" id="input_subject" placeholder="Subject" required>
+                    <textarea name="" id="input_message" cols="30" rows="10" placeholder="Message" required></textarea>
+                    <div class="container-button">
+                        <input type="submit" id="input_button" value="Enviar">
+                    </div>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <section class="container container-5">
+                <h5>© 2020 - João Vasconcelos.  All rights reserved.</h5>
+            </section>
+        </footer>
+        <script src="proj.js"></script>
+    </body>
+</html>

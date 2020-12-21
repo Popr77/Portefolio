@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <title>Serralves em Festa</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="projeto.css"/>
+  <link rel="icon" href="imgs/yem.PNG"  type="image/png"/>
+</head>
+<body>
+	<header class="current">
+        <nav>
+            <div class="topo_left">
+                <a href="index.html"><img src="imgs/yem2.fw.PNG" alt="logo"/></a>
+            </div>
+            <div class="container topo">
+                <div class="row row1">
+                    <div class="col-4 div-nav"></div>
+                    <div class="col-lg-2 div-nav"><a href="index.html"><li>HOME</li></a></div>
+                    <div class="col-lg-3 div-nav"><a href="apresentacao.html" class="a_grande"><li>Apresentação - Evento</li></a></div>
+                    <div class="col-lg-2 div-nav"><a href="formulario.html"><li class="atual">Formulário</li></a></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <section class="form">
+        
+        <div class="h1">
+            <h1>Queres deixar a tua marca neste evento único?</h1>
+            <h4>- Voluntaria-te para tornar este evento melhor para todos!*</h4>          
+        </div>
+        <br/>
+        <form action="action_page.php">
+            <label for="nome">Nome</label><br/>
+            <input type="text" name="nome" id="nome" placeholder="Nome completo"/><br/>
+
+            <label for="idade">Data de Nascimento</label><br/>
+            <input type="date" name="idade" id="idade" max="2002-01-01"/><br/>
+
+            <label for="morada">Morada</label><br/>
+            <input type="text" name="morada" id="morada" placeholder="Morada"/><br/>
+
+            <label for="zip_code">Código-Postal</label><br/>
+            <input type="text" name="zip_code" id="zip_code" pattern="[0-9]{4}-[0-9]{3}" title="Código postal com formato não válido" placeholder="0000-000"/><br/>
+
+            <label for="email">Email</label><br/>
+            <input type="email" name="email" id="email" placeholder="Email"/><br/>
+
+            <label for="tel">Telemóvel</label><br/>
+            <input type="tel" name="telemovel" id="tel" placeholder="Telemóvel"/><br/>
+
+            <label for="nac">Nacionalidade</label><br/>
+            <input type="text" name="nacionalidade" id="nac" placeholder="Nacionalidade"/><br/>
+
+            <label for="dias">Quantos dias estará disponivel?</label>
+            <select name="dias" id="dias">
+                <option value="1">1 dia</option>
+                <option value="2">2 dias</option>
+                <option value="3">3 dias</option>
+                <option value="4">4 dias</option>
+            </select><br/>
+            <input type="text" name="ndias" id="ndias"/><br/>
+            <p class="smalltext">Indique os dias que tem disponíveis</p>
+
+            <p class="formtext"><strong>Possui transporte próprio?</strong></p>
+            <input type="radio" name="transporte" id="sim" value="sim" checked/><label class="radio" for="sim">Sim</label>
+            <input type="radio" name="transporte" id="nao" value="nao"/><label class="radio" for="nao">Não</label><br/>
+
+            <label for="exp">Tem alguma experiência de voluntariado?</label><br/>
+            <textarea name="exp" id="exp" rows="5" cols="100"></textarea><br/>
+
+            <label for="razao">Qual o motivo para se candidatar?</label><br/>
+            <textarea name="razao" id="razao" rows="5" cols="100"></textarea><br/>
+
+            <label for="obs">Outras observações</label><br/>
+            <textarea name="obs" id="obs" rows="5" cols="100"></textarea><br/>
+
+            <input class="enviar" type="submit" value="Enviar"/>
+            <input class="limpar" type="reset" value="Limpar"/>
+        </form>
+    </section>
+    <footer>
+        <p>Info:  +351 808 200 543</p>
+        <p>Email: serralvesemfesta@serralves.com</p>
+        <section class="fim">
+          <a href="https://www.facebook.com/fundacaoserralves"><img src="imgs/fb.png" alt="facebook icon"/></a>
+          <a href="http://instagram.com/fundacao_serralves"><img src="imgs/insta.png" alt="instagram icon"/></a>
+          <a href="https://twitter.com/serralves_twit" ><img id="tt" src="imgs/tt.jpg" alt="twitter icon"/></a>
+        </section>
+      </footer>
+
+</body>
+</html>

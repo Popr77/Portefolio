@@ -1,0 +1,264 @@
+body{
+    background-color: #e75524;
+    margin: 0px;
+}
+
+html {
+    scroll-behavior: smooth; 
+}
+
+header{
+    background-image: url(imgs/logo-header.png);
+    background-size: AUTO;
+    height: 820px; 
+    background-position: center; 
+    margin-bottom: 200px; 
+}
+
+header.current{
+    height: 0px;
+    margin-bottom: 160px;
+}
+div.alert{
+    width: 60%;
+    float: right;
+    margin-bottom: 50px;
+    margin-top: 9px;
+    background-color: #FFD54F;
+    border: 0px;
+}
+
+section.header_bottom{
+    bottom: 0;
+    margin-bottom: 65px;
+    margin-left: 47%;
+    position: absolute;
+}
+
+section.video{
+    height: 900px; 
+}
+
+.imagem{
+    border:3px solid #37474F;
+    border-radius: 5px;
+}
+div.contentor_conteudo{
+    padding:15px;
+}
+nav a li{
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid transparent;
+    background-color: #e75524;
+    padding: 0px;
+    color: rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
+    font-size: 18px; 
+    font-weight: bold; 
+    margin-left: 10px;
+    margin-top: 15px;
+}
+li.atual{
+    color: white;
+}
+nav a li:hover{
+    color: white;
+
+
+}
+div.topo_left{
+    width: 20%;
+    float: left;
+    margin-left: -30px;
+}
+div.topo{
+    width: 90%; 
+    text-align: right;
+}
+div.texto_centro{
+    display: grid;
+    vertical-align: middle;
+}
+div.texto_centro p{
+    padding-top: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+iframe{
+    border: 0px;
+}
+
+div.texto_centro span{
+    font-weight: initial;
+    font-size: 18px;
+}
+div.h1{ /*ADD*/
+    color: white;
+    background-color: #FFAB00;
+    border-radius: 10px;
+    padding: 10px;
+}
+div.h1_1{ /*ADD*/
+    color: white;
+    text-align: center;
+    background-color: #212121;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 25px;
+}
+nav{
+    background-color: rgba(255, 255, 255, 0);
+    text-align: right;
+    width: 80%;
+    margin: auto;
+    padding: 15px;
+    border-radius: 0px 0px 16px 16px;
+}
+hr{
+    background-color: yellow;
+}
+
+.videoContainer{
+    margin-top: 150px; 
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    margin-bottom: 100px;
+}
+
+.videoContainer iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.text{
+    padding-top: 10px;
+}
+
+section.form, div.container2{
+    background-color: #FAFAFA;
+    color: black;
+    padding: 10px;
+    border-left: 50px solid #e75524;
+    border-right: 50px solid #e75524;
+    width: 80%;
+    margin: auto;
+    border: 5px solid white;
+    border-radius: 5px;
+    padding-bottom: 50px;
+    margin-bottom: 100px;
+}
+label.radio{
+    padding-top: 1px;
+    padding-left: 2px;
+}
+div.container2{
+    padding-bottom: 10px;
+}
+
+form{
+    padding-left: 100px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer{
+    padding-top: 15px;
+    background-color: #212121;
+    border-top: 1px solid white;
+    color: white;
+    text-align: center;
+    padding: 35px;
+}
+
+section.fim img{
+    margin-top: 10px;
+    width: 50px; 
+    margin-left: 17px;
+}
+#tt{
+    border-radius: 50px; 
+}
+
+
+
+/**/
+label{
+    padding-top: 15px;
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+
+p.formtext{
+    padding-top: 20px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+#zip_code, #tel{
+    width: 90px;
+}
+
+#nome, #morada, #ndias{
+    width: 50%;
+}
+
+#email{
+    width: 30%;
+}
+
+textarea{
+    max-width:90%;
+    min-width:90%;
+    resize:vertical;
+    box-sizing:border-box;
+    margin:auto;
+    resize: none;
+}
+
+p.smalltext{
+    font-size: small;
+}
+
+@media (max-width: 991.98px){
+    #email{
+        width: 80%;
+    }
+
+    #nome, #morada, #ndias{
+        width: 80%;
+    }
+}
+
+input, textarea{
+    border-radius: 4px;
+    border: 1px solid black;
+    padding: 5px 3px;
+}
+
+
+.limpar:hover{
+    background-color: #F44336;
+    color: white;
+}
+
+.enviar:hover{
+    background-color: #212121;
+    color: white;
+}
+
+textarea:focus, input:focus{
+    background-color: #ECEFF1   ;
+    color: black;
+    outline: transparent;
+}
